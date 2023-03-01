@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,41 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />
 </head>
+
 <body>
     <main>
+
         <section id="login">
             <div id="imagem">
                 <!-- Aqui vai a imagem nas CSS -->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.php">
-                    
+                <p>Seja bem vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                    ambiente</p>
+                <form action="login.php" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" required maxlength="30">
+                        <label for="ilogin" autocomplete="e-mail">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="sunha" id="isenha" placeholder="Sua Senha" required minlength="8"
+                            maxlength="20">
+                        <label for="isenha" autocomplete="current-password">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
 
         </section>
+
     </main>
 </body>
+
 </html>
