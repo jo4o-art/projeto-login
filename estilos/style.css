@@ -38,7 +38,7 @@ section#login {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.450);
 
-    transition: width .3s,  height .3s;
+    transition: width .1s,  height .1s;
     transition-timing-function: ease;
 }
 
